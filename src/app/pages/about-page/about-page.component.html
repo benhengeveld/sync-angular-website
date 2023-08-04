@@ -1,0 +1,25 @@
+<app-default-page-template [crtOverlay]="true" [glitchNav]="false">
+  <app-card-item cardTitle="My Skills" marginBottom="1em">
+    <div class="svg-holder" id="svg-icons">
+      <app-svg-icon
+        *ngFor="let icon of icons"
+        [src]="icon.fileName"
+        [tooltipText]="icon.name"
+        [glitch]="false"
+        size="5.5em"
+      ></app-svg-icon>
+    </div>
+  </app-card-item>
+
+  <app-card-item cardTitle="My Stuff">
+    <div class="svg-holder" id="svg-links">
+      <app-svg-link
+        *ngFor="let link of links"
+        [src]="link.fileName"
+        [href]="link.link"
+        [glitch]="false"
+        size="8em"
+      ></app-svg-link>
+    </div>
+  </app-card-item>
+</app-default-page-template>

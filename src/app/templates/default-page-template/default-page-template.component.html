@@ -1,0 +1,8 @@
+<app-background-image [crtBackground]="!crtOverlay"></app-background-image>
+<app-crt-overlay *ngIf="crtOverlay"></app-crt-overlay>
+<div id="page">
+  <app-navbar *ngIf="navbar" [glitch]="glitchNav"></app-navbar>
+  <div id="content">
+    <ng-content></ng-content>
+  </div>
+</div>

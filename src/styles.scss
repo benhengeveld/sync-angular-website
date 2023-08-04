@@ -1,0 +1,24 @@
+@import "../node_modules/@angular/material/prebuilt-themes/purple-green.css";
+@import "./assets/styles/glitch.scss";
+@import "./assets/styles/crt.scss";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.error-snackbar {
+  background-color: rgb(216, 70, 70);
+  color: white;
+}

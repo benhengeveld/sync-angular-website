@@ -1,0 +1,8 @@
+<div class="svg svg-icon" [ngStyle]="{'width': size}">
+  <img
+    [src]="'/assets/svgs/' + src + '.svg'"
+    [alt]="src"
+    [class.glitch]="glitch"
+  />
+  <span class="svg-tooltip" *ngIf="tooltipText">{{ tooltipText }}</span>
+</div>

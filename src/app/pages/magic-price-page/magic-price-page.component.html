@@ -1,0 +1,29 @@
+<app-default-page-template>
+  <app-card-item height="100%">
+    <div id="magic-card-item">
+      <form id="card-search-form" (submit)="search()">
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>Card Code</mat-label>
+          <input
+            matInput
+            type="text"
+            id="card-code"
+            autocomplete="off"
+            [formControl]="searchControl"
+          />
+        </mat-form-field>
+      </form>
+      <div id="card-box">
+        <div id="card-image">
+          <img *ngIf="cardImage" [src]="cardImage" alt="Card image" />
+        </div>
+        <div id="card-info">
+          <h1 *ngIf="cardSetName">Set: {{ cardSetName }}</h1>
+          <h1 *ngIf="cardNormalPrice">Normal: ${{ cardNormalPrice }}</h1>
+          <h1 *ngIf="cardFoilPrice">Foil: ${{ cardFoilPrice }}</h1>
+          <h1 *ngIf="cardEtchedPrice">Etched: ${{ cardEtchedPrice }}</h1>
+        </div>
+      </div>
+    </div>
+  </app-card-item>
+</app-default-page-template>

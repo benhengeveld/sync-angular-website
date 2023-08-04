@@ -1,0 +1,18 @@
+#svg-icons {
+  gap: 1em;
+}
+
+#svg-links {
+  gap: 3em;
+}
+
+.svg-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+app-svg-icon {
+  width: 5.5em;
+}
